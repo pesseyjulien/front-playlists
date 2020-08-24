@@ -1,5 +1,5 @@
 <script>
-  export let name;
+
 </script>
 
 <style>
@@ -25,5 +25,5 @@
 </style>
 
 <main>
-  <h1>Welcome to Playlists Looker</h1>
+  <h1>Welcome to Playlists Finder</h1>
 </main>
