@@ -1,9 +1,11 @@
 <script>
   import { borderRadius } from "../theme";
+  import { setResults } from "../stores";
+
   let search = "";
 
   function handleSearch() {
-    console.log(search);
+    setResults(search);
   }
 </script>
 

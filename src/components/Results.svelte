@@ -1,5 +1,5 @@
 <script>
-  let results = [];
+  import { results } from "../stores";
 </script>
 
-<div class="wrapper">RESULTS</div>
+<div class="wrapper">{$results.length}</div>
