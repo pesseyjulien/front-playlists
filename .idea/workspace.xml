@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8da645fa-e3a9-4dac-bf93-da0b81aca32b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/api/tracker.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/tracker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Results.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Results.svelte" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/SearchForm.svelte" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/SearchForm.svelte" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
