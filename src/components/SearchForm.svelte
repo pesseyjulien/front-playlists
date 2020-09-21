@@ -1,12 +1,13 @@
 <script>
   import { borderRadius } from "../theme";
-  import { getBySong } from "../api/tracker";
+  import { getBySong, getByArtist } from "../api/tracker";
 
   let artistName = "";
   let songName = "";
 
   function handleSearch() {
-    getBySong(songName);
+    if(!songName.length) getByArtist(artistName)
+    else getBySong(songName);
   }
 </script>
 
@@ -15,7 +16,6 @@
     display: flex;
     flex-direction: column;
   }
-
   .inputField {
     border-radius: var(--borderRadius);
   }
