@@ -1,10 +1,9 @@
 import { writable } from "svelte/store";
 
-export const results = writable([]);
-
-export const setResults = (newElem) => {
-  results.update((state) => {
-    state.push(newElem);
-    return state;
-  });
+const resultsInitialState = {
+  data: [],
+  loading: false,
+  error: null,
 };
+
+export const results = writable(resultsInitialState);

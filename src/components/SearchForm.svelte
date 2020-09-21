@@ -1,11 +1,12 @@
 <script>
   import { borderRadius } from "../theme";
-  import { setResults } from "../stores";
+  import { getBySong } from "../api/tracker";
 
-  let search = "";
+  let artistName = "";
+  let songName = "";
 
   function handleSearch() {
-    setResults(search);
+    getBySong(songName);
   }
 </script>
 
@@ -25,10 +26,17 @@
 
 <div class="wrapper" style="--borderRadius: {borderRadius}">
   <input
+    id="artistSearchField"
     class="inputField"
     type="text"
-    placeholder="Rechercher un artiste"
-    bind:value={search} />
+    placeholder="Artiste"
+    bind:value={artistName} />
+  <input
+    id="songSearchField"
+    class="inputField"
+    type="text"
+    placeholder="Chanson"
+    bind:value={songName} />
   <button class="button" type="button" on:click={handleSearch}>
     Rechercher
   </button>
