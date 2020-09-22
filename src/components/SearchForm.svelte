@@ -6,7 +6,7 @@
   let songName = "";
 
   function handleSearch() {
-    if(!songName.length) getByArtist(artistName)
+    if (artistName) getByArtist(artistName);
     else getBySong(songName);
   }
 </script>

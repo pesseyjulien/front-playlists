@@ -18,10 +18,8 @@ export const getBySong = (song) => {
       },
     })
     .then((response) => {
-      console.log(response);
       results.update((state) => ({
         ...state,
-        //data: response.data.map(parser),
         data: response.data,
       }));
     });
@@ -29,18 +27,15 @@ export const getBySong = (song) => {
 
 export const getByArtist = (artist) => {
   axios
-      .get(`${HOST}${ENDPOINT}`, {
-        params: {
-          artist,
-        },
-      })
-      .then((response) => {
-        console.log(response);
-        results.update((state) => ({
-          ...state,
-          //data: response.data.map(parser),
-          data: response.data,
-        }));
-      });
+    .get(`${HOST}${ENDPOINT}`, {
+      params: {
+        artist,
+      },
+    })
+    .then((response) => {
+      results.update((state) => ({
+        ...state,
+        data: response.data,
+      }));
+    });
 };
-
